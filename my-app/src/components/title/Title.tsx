@@ -1,8 +1,10 @@
+import "./title.scss"
+
 function Title () {
     return (
         <div className="title_container">
             <h1 className="title_slogan"> 
-                <span>Realiable, efficient delivey</span>
+                <span>Realiable, efficient delivery</span>
                 <span className="title_slogan_bold">Powered by Technology</span>
             </h1>
             <p className="title_text">

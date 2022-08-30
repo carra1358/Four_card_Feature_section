@@ -1,0 +1,30 @@
+.title_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 15% 4%;
+}
+
+.title_slogan{
+   font-weight: 200;
+   color:hsl(234, 12%, 34%);
+   span{
+    display: block;
+    white-space: nowrap;
+   }
+}
+
+.title_slogan_bold{
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.title_text{
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: hsl(229, 6%, 66%);
+    font-size: 1.1em;
+    margin: 0;
+}
