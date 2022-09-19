@@ -1,12 +1,16 @@
-function Card ({title,textContent,iconSource}: CardProps) {
-    
-  
+import "./cards.scss"
+
+function Card({ title, borderColor, textContent, iconSource }: CardProps) {
+
+
 
     return (
-        <div className="Card_container">
-                 <h3>{title}</h3>
-                 <p>{textContent}</p>
-            <div>
+        <div className="card_container">
+            <div className={`card_text ${borderColor}`}>
+                <h3 >{title}</h3>
+                <p>{textContent}</p>
+            </div>
+            <div className="card_img">
                 <img src={iconSource} alt={iconSource} />
 
             </div>
@@ -15,10 +19,10 @@ function Card ({title,textContent,iconSource}: CardProps) {
 }
 
 type CardProps = {
-    title : string;
-    textContent : string,
-    iconSource: string;
-
+    title: string;
+    textContent: string,
+    iconSource: string,
+    borderColor: string,
 }
 
 

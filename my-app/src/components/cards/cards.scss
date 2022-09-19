@@ -1,0 +1,89 @@
+
+$margin : 5%;
+$borderRadius: 5px; 
+
+.card_container{
+    width: 80%;
+    border-radius: $borderRadius;
+    box-shadow: hsl(0, 0%, 98%) 0px 10px 15px -3px, hsl(234, 12%, 34%) 0px 4px 6px -2px;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_text{
+    width: 100%;
+    border-top: 3px solid;
+    margin: 0;
+    border-radius: $borderRadius $borderRadius 0 0;
+
+    h3{
+        font-size: 1.4em;
+        font-weight: 600;
+        margin: $margin;
+        text-transform: capitalize;
+        color: hsl(234, 12%, 34%);
+    }
+    p{
+        margin: $margin;
+        color: hsl(229, 6%, 66%);
+    }
+}
+
+.bt_light_blue{
+
+    border-color: hsl(180, 62%, 55%);
+
+}
+
+.bt_blue{
+
+    border-color: hsl(212, 86%, 64%);
+    
+}
+
+.bt_orange{
+
+    border-color: hsl(34, 97%, 64%);
+    
+}
+
+.bt_red{
+    border-color: hsl(0, 78%, 62%);
+}
+.card_img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+    img{
+        margin: $margin;
+    }
+}
+
+.desktop_card_position{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media  (min-width:1000px) {
+    .card_container{
+        width: 20%;
+        margin: 25px;
+    }
+
+    .desktop_card_position{
+        width: 20%;
+
+
+    .card_container{
+        width: 100%;
+    }
+    }
+
+}

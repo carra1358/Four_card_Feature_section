@@ -28,3 +28,15 @@
     font-size: 1.1em;
     margin: 0;
 }
+@media  (max-width:374px) {
+    .title_slogan{
+        font-size: 1.6em;
+    }
+}
+
+@media  (min-width:1000px) {
+    .title_container{
+      margin: 4% 2%;
+    }
+  
+  }
